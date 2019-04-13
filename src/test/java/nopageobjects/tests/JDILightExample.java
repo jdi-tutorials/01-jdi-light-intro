@@ -20,14 +20,12 @@ public class JDILightExample {
         $("#name").sendKeys("epam");
         $("#password").sendKeys("1234");
         $("#login-button").click();
-        $("//*[@class='sidebar-menu']//*[text()='Contact form']").click();
-        assertThat(getUrl(), is("https://jdi-testing.github.io/jdi-light/contacts.html"));
-        assertThat(getTitle(), is("Contact Form"));
+        $("#user-name").is().displayed();
     }
 
     @Test
     public void actionsWithPage() {
-        WebPage.openUrl("https://jdi-testing.github.io/jdi-light/contacts.html");
+        WebPage.openUrl("https://epam.github.io/JDI/index.html");
         WebPage.getUrl();
         WebPage.getTitle();
         WebPage.back();

@@ -14,7 +14,6 @@ public class PageObjectExample implements TestsInit {
         name.sendKeys("epam");
         password.sendKeys("1234");
         loginButton.click();
-        menuContactForm.click();
-        contactPage.checkOpened();
+        userName.is().displayed();
     }
 }
