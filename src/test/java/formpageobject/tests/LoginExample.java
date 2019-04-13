@@ -5,16 +5,16 @@ import org.testng.annotations.Test;
 import pageobject.uiobjects.example.jdisite.entities.User;
 
 import static pageobject.uiobjects.example.jdisite.JDISite.loginAs;
-import static pageobject.uiobjects.example.jdisite.pages.HomePage.*;
+import static pageobject.uiobjects.example.jdisite.pages.HomePage.userName;
 
 public class LoginExample implements TestsInit {
     User ROMAN = new User().set(c -> {
-        c.name = "epam";
-        c.password = "1234";} );
+        c.name = "Roman";
+        c.password = "Jdi1234";} );
 
     @Test
     public void fillContactTest() {
         loginAs(ROMAN);
-        userName.is().displayed();
+        userName.assertThat().displayed();
     }
 }

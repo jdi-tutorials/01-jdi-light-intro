@@ -7,7 +7,7 @@ import pageobject.uiobjects.example.jdisite.sections.LoginForm;
 
 import static pageobject.uiobjects.example.jdisite.pages.HomePage.userIcon;
 
-@JSite("https://epam.github.io/JDI/")
+@JSite("https://jdi-testing.github.io/jdi-light/")
 public class JDISite {
     public static HomePage homePage;
     public static LoginForm loginForm;

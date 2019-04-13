@@ -1,9 +1,9 @@
 package pageobject.tests;
 
-import pageobject.TestsInit;
 import org.testng.annotations.Test;
+import pageobject.TestsInit;
 
-import static pageobject.uiobjects.example.site.SiteJdi.*;
+import static pageobject.uiobjects.example.site.SiteJdi.homePage;
 import static pageobject.uiobjects.example.site.pages.HomePage.*;
 
 public class PageObjectExample implements TestsInit {
@@ -11,9 +11,9 @@ public class PageObjectExample implements TestsInit {
     public void openPage() {
         homePage.open();
         userIcon.click();
-        name.sendKeys("epam");
-        password.sendKeys("1234");
+        name.sendKeys("Roman");
+        password.sendKeys("Jdi1234");
         loginButton.click();
-        userName.is().displayed();
+        userName.assertThat().displayed();
     }
 }
