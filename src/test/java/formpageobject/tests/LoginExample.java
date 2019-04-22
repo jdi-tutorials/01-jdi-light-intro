@@ -14,7 +14,7 @@ public class LoginExample implements TestsInit {
         c.password = "Jdi1234";} );
 
     @Test
-    public void fillContactTest() {
+    public void loginTest() {
         userIcon.click();
         loginForm.loginAs(ROMAN);
         userName.is().displayed();

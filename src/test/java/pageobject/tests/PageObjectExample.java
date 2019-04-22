@@ -8,7 +8,7 @@ import static pageobject.uiobjects.example.site.pages.HomePage.*;
 
 public class PageObjectExample implements TestsInit {
     @Test
-    public void openPage() {
+    public void loginTest() {
         homePage.open();
         userIcon.click();
         name.sendKeys("Roman");

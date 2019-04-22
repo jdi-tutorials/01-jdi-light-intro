@@ -12,7 +12,7 @@ public class JDILightExample {
         openUrl("https://jdi-testing.github.io/jdi-light/");
     }
     @Test
-    public void loginAndOpenContactPage() {
+    public void loginSimpleTest() {
         openUrl("https://jdi-testing.github.io/jdi-light/");
         $("img#user-icon").click();
         $("#name").sendKeys("Roman");
