@@ -4,7 +4,8 @@ import formpageobject.TestsInit;
 import org.testng.annotations.Test;
 import pageobject.uiobjects.example.jdisite.entities.User;
 
-import static pageobject.uiobjects.example.jdisite.JDISite.loginAs;
+import static pageobject.uiobjects.example.jdisite.JDISite.loginForm;
+import static pageobject.uiobjects.example.jdisite.pages.HomePage.userIcon;
 import static pageobject.uiobjects.example.jdisite.pages.HomePage.userName;
 
 public class LoginExample implements TestsInit {
@@ -14,7 +15,8 @@ public class LoginExample implements TestsInit {
 
     @Test
     public void fillContactTest() {
-        loginAs(ROMAN);
-        userName.assertThat().displayed();
+        userIcon.click();
+        loginForm.loginAs(ROMAN);
+        userName.is().displayed();
     }
 }

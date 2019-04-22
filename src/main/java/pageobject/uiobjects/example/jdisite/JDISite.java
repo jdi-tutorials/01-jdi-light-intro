@@ -11,9 +11,4 @@ import static pageobject.uiobjects.example.jdisite.pages.HomePage.userIcon;
 public class JDISite {
     public static HomePage homePage;
     public static LoginForm loginForm;
-
-    public static void loginAs(User user) {
-        userIcon.click();
-        loginForm.loginAs(user);
-    }
 }

@@ -24,10 +24,8 @@ public class JDILightExample {
     @Test
     public void actionsWithPage() {
         WebPage.openUrl("https://jdi-testing.github.io/jdi-light/");
-        WebPage.getUrl();
-        WebPage.getTitle();
-        WebPage.back();
-        WebPage.forward();
+        WebPage.getUrl(); // WebPage.getTitle();
+        WebPage.back();   // WebPage.forward();
         WebPage.getHtml();
         WebPage.refresh();
     }
