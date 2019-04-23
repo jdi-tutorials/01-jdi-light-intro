@@ -10,8 +10,8 @@ import static pageobject.uiobjects.example.jdisite.pages.HomePage.userName;
 
 public class LoginExample implements TestsInit {
     User ROMAN = new User().set(c -> {
-        c.name = "Roman";
-        c.password = "Jdi1234";} );
+        c.name = "Roman"; c.password = "Jdi1234";
+    } );
 
     @Test
     public void loginTest() {
