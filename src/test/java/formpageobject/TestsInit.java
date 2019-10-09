@@ -6,14 +6,11 @@ import pageobject.uiobjects.example.jdisite.JDISite;
 
 import static com.epam.jdi.light.driver.WebDriverUtils.killAllSeleniumDrivers;
 import static com.epam.jdi.light.elements.init.PageFactory.initElements;
-import static com.epam.jdi.light.logger.LogLevels.STEP;
-import static com.epam.jdi.light.settings.WebSettings.logger;
 import static pageobject.uiobjects.example.jdisite.JDISite.homePage;
 
 public interface TestsInit {
     @BeforeSuite(alwaysRun = true)
     static void setUp() {
-        logger.setLogLevel(STEP);
         initElements(JDISite.class);
         homePage.open();
     }
