@@ -4,7 +4,7 @@ import com.epam.jdi.light.elements.composite.WebPage;
 import org.testng.annotations.Test;
 
 import static com.epam.jdi.light.elements.composite.WebPage.openUrl;
-import static com.epam.jdi.light.ui.html.HtmlFactory.$;
+import static com.epam.jdi.light.elements.init.UIFactory.$;
 
 public class JDILightExample {
     @Test
