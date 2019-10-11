@@ -20,7 +20,6 @@ public class JDILightExample {
         $("#login-button").click();
         $("#user-name").is().displayed();
     }
-
     @Test
     public void actionsWithPage() {
         WebPage.getUrl(); // WebPage.getTitle();

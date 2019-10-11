@@ -9,7 +9,7 @@ import static pageobject.uiobjects.example.jdisite.pages.HomePage.userIcon;
 import static pageobject.uiobjects.example.jdisite.pages.HomePage.userName;
 
 public class LoginExample implements TestsInit {
-    User ROMAN = new User().set(c -> {
+    public static User ROMAN = new User().set(c -> {
         c.name = "Roman"; c.password = "Jdi1234";
     } );
 
